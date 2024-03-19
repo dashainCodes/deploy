@@ -4,9 +4,9 @@ const cors=require('cors');
 
 app(cors());
 
-app.all("*", (req, res, next) => {
+app.all("*", (req, res) => {
     
-    res.send("hiiiii its working.")
+   return res.send("hiiiii its working.")
   });
 
 app.listen(4001,()=>{
