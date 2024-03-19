@@ -4,7 +4,7 @@ const cors=require('cors');
 
 app(cors());
 
-app.all("*", (req, res) => {
+app.get("/", (req, res) => {
     
    return res.send("hiiiii its working.")
   });
